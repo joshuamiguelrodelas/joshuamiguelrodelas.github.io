@@ -523,7 +523,7 @@ section {
 .talent-joshuelmashups {
   height: auto;
   width: 100%;
-  max-width: 300px;
+  max-width: 100%;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -532,6 +532,7 @@ section {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.3);
   transform: scale(0.9);
 }
+
 .talent-box h1, .recent-video h1, .favorite-video h1, .top-video h1 {
   margin-top: 10px;
   font-size: 1.25rem;
@@ -539,10 +540,19 @@ section {
   text-align: center;
 }
 
+.recent-video, .favorite-video, .top-video {
+  width: 100%;  
+  max-width: 800px;
+  margin: 0 auto;  
+  text-align: center;
+}  
+
 .recent-video iframe, .favorite-video iframe, .top-video iframe {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
+  width: 100%;               
+  height: auto;                
+  aspect-ratio: 16 / 9;        
+  max-width: 100%;          
+  border: none;
 }
 
 /*FOOTER*/
